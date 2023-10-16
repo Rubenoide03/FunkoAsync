@@ -67,9 +67,9 @@ public class FunkoService {
         return CompletableFuture.supplyAsync(() -> funkos.stream().filter(myFunko -> myFunko.fecha().getYear() == 2023).toList());
     }
     public CompletableFuture<List<MyFunko>> funkosStitch(List<MyFunko> funkos) {
-        return CompletableFuture.supplyAsync(() -> funkos.stream().filter(myFunko -> myFunko.nombre().equals("Stitch")).toList());
+        return CompletableFuture.supplyAsync(() -> funkos.stream().filter(myFunko -> myFunko.nombre().contains("Stitch")).toList());
     }
     public CompletableFuture<Long> numeroFunkosStitch(List<MyFunko> funkos) {
-        return CompletableFuture.supplyAsync(() -> funkos.stream().filter(myFunko -> myFunko.nombre().equals("Stitch")).count());
+        return CompletableFuture.supplyAsync(() -> funkos.stream().filter(myFunko -> myFunko.nombre().contains("Stitch")).count());
     }
 }
