@@ -27,7 +27,8 @@ Es un proyecto de lectura de archivo CSV con procesamiento de datos e implementa
 * El metodo funkosPorModelo devuelve un map con los funkos agrupados por modelo
 * El metodo numerodeFunkosPorModelo devuelve un map con el numero de funkos agrupados por modelo
 * El metodo funkosLanzados2023 devuelve una lista de funkos que se lanzaron en el 2023 comparando y recorriendo las fechas con el año 2023
-* El metodo funkosStitch devuelve una lista de funkos que se 
+* El metodo funkosStitch devuelve una lista de funkos que contienen Stitch en el nombre.
+* El metodo numeroFunkosStitch devuelve el numero de funkos que contienen Stitch en el nombre.
 * 
 ````
 package dev.services;
